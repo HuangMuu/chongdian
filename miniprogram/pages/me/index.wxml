@@ -1,0 +1,56 @@
+<view class="container">
+  <!-- 账户信息 -->
+  <view class="account-info">
+    <view class="balance-section">
+      <text class="balance-label">账户余额（元）</text>
+      <view class="balance-row">
+        <view class="balance-info">
+          <text class="balance-amount">10.25</text>
+          <view class="refund-link">
+          <image src="/images/refund.png" mode=""/>
+            <text>退款</text>
+            <text>></text>
+          </view>
+        </view>
+        <button class="recharge-btn">充值</button>
+      </view>
+    </view>
+    <view class="account-row">
+      <text>账号：159****5287</text>
+      <text>ID：22973469</text>
+    </view>
+  </view>
+
+  <!-- 我的钱包 -->
+  <view class="wallet-card">
+    <view class="wallet-header">
+      <text>我的钱包</text>
+      <text class="wallet-link">进入钱包></text>
+    </view>
+    <view class="wallet-info">
+      <view class="wallet-item">
+        <text class="amount">10.00</text>
+        <text class="label">充值余额(元)</text>
+      </view>
+      <view class="wallet-item">
+        <text class="amount">0.25</text>
+        <text class="label">赠送余额(元)</text>
+      </view>
+      <view class="wallet-item">
+        <text class="amount">未购买</text>
+        <text class="label">充电套餐</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 功能菜单 -->
+  <view class="function-section">
+    <text class="section-title">常用功能</text>
+    <view class="function-grid">
+      <view class="function-item" wx:for="{{functionList}}" wx:key="id">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

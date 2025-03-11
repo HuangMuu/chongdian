@@ -1,0 +1,49 @@
+<view class="container">
+  <!-- 顶部搜索栏 -->
+  <view class="search-bar">
+    <text>您上次使用：HBLF20041380</text>
+    <button class="continue-btn">继续充电</button>
+  </view>
+
+  <!-- 标签切换 -->
+  <view class="tab-bar">
+    <view class="tab-item {{activeTab === 0 ? 'active' : ''}}" bindtap="switchTab" data-index="0">
+      附近充电站
+    </view>
+    <view class="tab-item {{activeTab === 1 ? 'active' : ''}}" bindtap="switchTab" data-index="1">
+      常用充电站
+    </view>
+  </view>
+
+  <!-- 充电站列表 -->
+  <view class="station-list">
+    <view class="station-item" wx:for="{{stationList}}" wx:key="id">
+      <view class="station-info">
+        <view class="station-header">
+          <text class="station-name">{{item.name}}</text>
+          <text class="station-distance">{{item.distance}}m</text>
+        </view>
+      <view class="adrr-star">
+        <text class="station-address">{{item.address}}</text>
+        <image class="favorite {{item.isFavorite ? 'active' : ''}}" src="/images/star.png"></image>
+      </view>
+      </view>
+      <view class="station-actions">
+        <view class="station-status">
+          <view class="status-item">
+            <image src="/images/available-total.png"></image>
+            <text>总计 {{item.total}}</text>
+          </view>
+          <view class="status-item">
+            <image src="/images/available.png"></image>
+            <text>可用 {{item.available}}</text>
+          </view>
+        </view>
+        <view class="map-link">
+          <image src="/images/map.png"></image>
+          <text>查看地图 ></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

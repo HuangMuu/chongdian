@@ -1,0 +1,84 @@
+<!-- 自定义导航栏 -->
+<view class="custom-nav">
+  <view class="location">
+    <image class="location-icon" src="/images/icons/map.png"></image>
+    <text class="city-name">深圳市</text>
+  </view>
+  <text class="nav-title">首页</text>
+</view>
+
+<view class="container">
+  <swiper class="banner" indicator-dots autoplay circular>
+    <swiper-item wx:for="{{bannerList}}" wx:key="index">
+      <image src="{{item}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 功能菜单 -->
+  <view class="menu-card">
+    <view class="menu-grid">
+      <view class="menu-item" wx:for="{{menuList}}" wx:key="id">
+        <image class="menu-icon" src="{{item.icon}}"></image>
+        <text class="menu-text">{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 正在充电提示 -->
+  <view class="charging-status" bindtap="goToCharging">
+    <text class="charging-text">正在充电</text>
+    <image class="arrow-icon" src="/images/arrowr.png"></image>
+  </view>
+
+  <!-- 功能菜单第二行 -->
+  <view class="menu-card secondary">
+    <view class="menu-grid-secondary">
+      <view class="menu-item" wx:for="{{secondaryMenuList}}" wx:key="id">
+        <image class="menu-icon" src="{{item.icon}}"></image>
+        <text class="menu-text">{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 充电站信息 -->
+  <view class="station-card">
+    <view class="station-header">
+      <text class="station-name">新安湖花园站（兴华二路）15</text>
+      <text class="station-port">端口数24</text>
+    </view>
+    <text class="station-address">深圳市宝安区新安街道新安社区兴华二路</text>
+    
+    <!-- 价格信息 -->
+    <view class="price-list">
+      <view class="price-item">
+        <text class="power-range">0-200瓦</text>
+        <text class="price">0.5元/小时</text>
+      </view>
+      <view class="price-item">
+        <text class="power-range">200瓦~500瓦</text>
+        <text class="price">0.6元/小时</text>
+      </view>
+      <view class="price-item">
+        <text class="power-range">500瓦~800瓦</text>
+        <text class="price">0.9元/小时</text>
+      </view>
+      <view class="price-item">
+        <text class="power-range">800瓦~1000瓦</text>
+        <text class="price">1.5元/小时</text>
+      </view>
+      <view class="price-item">
+        <text class="power-range">1000瓦以上</text>
+        <text class="price">2.5元/小时</text>
+      </view>
+    </view>
+
+    <view class="station-footer">
+      <text class="more-info">点击查看更多电站信息</text>
+      <view class="map-link">
+        <image class="map-icon" src="/images/map.png"></image>
+        <text>查看地图</text>
+        <image class="arrow-icon" src="/images/arrowr.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
