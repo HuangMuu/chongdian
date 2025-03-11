@@ -11,3 +11,4 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+这是用trae半小时写出来的页面,目前还没后端,待开发...
