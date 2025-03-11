@@ -1,0 +1,179 @@
+.container {
+  background: #F6F6F6;
+  min-height: 100vh;
+}
+
+.account-info {
+  background: linear-gradient(180deg, #07C160 0%, #07C160 100%);
+  padding: 30rpx;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.balance-section {
+  margin-bottom: 30rpx;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);  /* 添加半透明白色分割线 */
+  padding-bottom: 20rpx;  /* 增加底部内边距 */
+}
+
+.balance-label {
+  font-size: 24rpx;
+}
+
+.balance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rpx;
+  position: relative;
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-amount {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.refund-link {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #ebd302;
+  margin-top: 10rpx;
+}
+
+.refund-link image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 8rpx;
+  opacity: 1;  /* 调整图片透明度，使其更深 */
+}
+
+.refund-link text {
+  margin-right: 4rpx;
+}
+.refund-link image{
+  margin-top: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.refund-link text {
+  margin-right: 10rpx;
+}
+
+.recharge-btn {
+  position: absolute;  /* 添加绝对定位 */
+  right: 0;           /* 靠右对齐 */
+  width: 140rpx !important;
+  height: 68rpx !important;
+  background: #ebd302;
+  color: #000;
+  font-size: 26rpx;
+  padding: 0 !important;  /* 移除内边距 */
+  border-radius: 24rpx;
+  margin: 0;
+  line-height: 68rpx;
+  text-align: center;
+}
+
+.balance-amount {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+
+.account-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  margin-bottom: 70rpx;
+}
+
+.wallet-card {
+  width: 85%;
+  background: #fff;
+  margin: -60rpx 10rpx 20rpx 10rpx; 
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+  font-size: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;  /* 添加分割线 */
+}
+
+.wallet-link {
+  color: #999;
+  font-size: 26rpx;
+}
+
+.wallet-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet-item {
+  text-align: center;
+}
+
+.wallet-item .amount {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.wallet-item .label {
+  font-size: 26rpx;
+  color: #666;
+}
+
+.function-section {
+  width: 85%;
+  background: #fff;
+  margin: 20rpx;
+  border-radius: 12rpx;
+  padding: 30rpx;
+}
+
+.section-title {
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+  display: block;
+}
+
+.function-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30rpx;
+}
+
+.function-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.function-item image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 10rpx;
+}
+
+.function-item text {
+  font-size: 24rpx;
+  color: #333;
+}

@@ -1,0 +1,147 @@
+.container {
+  padding: 20rpx;
+  background: #F6F6F6;
+}
+
+.search-bar {
+  background: #E8F8E8;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+
+.continue-btn {
+  background: #07C160;
+  color: #fff;
+  font-size: 28rpx;
+  padding: 10rpx 30rpx;
+  border-radius: 30rpx;
+  margin: 0;
+}
+
+.tab-bar {
+  width: calc(100% - 20rpx);
+  display: flex;
+  background: #fff;
+  margin: 0 10rpx 20rpx 10rpx;
+  border-radius: 8rpx;
+  justify-content: space-between;
+}
+
+.tab-item {
+  width: 50%;
+  text-align: center;
+  padding: 20rpx 0;
+  color: #666;
+  position: relative;
+  font-size: 28rpx;
+}
+
+.tab-item.active {
+  color: #07C160;
+  font-weight: bold;
+}
+
+.tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60rpx;
+  height: 6rpx;
+  background: #07C160;
+  border-radius: 3rpx;
+}
+
+.station-list {
+  width: 100%;
+  padding: 5rpx 10rpx;
+}
+
+.station-item {
+  background: #fff;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  margin: 0 10rpx 20rpx 10rpx;
+}
+
+.station-info {
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx dashed #E5E5E5;
+  margin-bottom: 20rpx;
+}
+
+.station-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.station-name {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.station-distance {
+  color: #999;
+  font-size: 28rpx;
+}
+.adrr-star{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.station-address {
+  color: #666;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+}
+.favorite {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.station-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+.station-status {
+  display: flex;
+  gap: 20rpx;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+}
+
+.status-item image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 6rpx;
+}
+
+.map-link {
+  display: flex;
+  align-items: center;
+  color: #07C160;
+  font-size: 24rpx;
+}
+
+.map-link image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
+}
+
+
+
+

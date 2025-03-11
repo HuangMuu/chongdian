@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- 顶部标签栏 -->
+  <view class="tab-bar">
+    <view class="tab-item {{activeTab === 0 ? 'active' : ''}}" bindtap="switchTab" data-index="0">
+      活动
+    </view>
+    <view class="tab-item {{activeTab === 1 ? 'active' : ''}}" bindtap="switchTab" data-index="1">
+      充电小知识
+    </view>
+    <view class="tab-item {{activeTab === 2 ? 'active' : ''}}" bindtap="switchTab" data-index="2">
+      操作指南
+    </view>
+  </view>
+
+  <!-- 活动列表 -->
+  <view class="activity-list" wx:if="{{activeTab === 0}}">
+    <view class="activity-item" wx:for="{{activityList}}" wx:key="id">
+      <image src="{{item.image}}" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
